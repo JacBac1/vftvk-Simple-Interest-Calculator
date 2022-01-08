@@ -15,7 +15,7 @@ function compute()      //button
     }
     else
     {
-        document.getElementById("result").innerHTML="If you deposit $"+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of $"+amount.toFixed(2)+",\<br\>in the year "+year+"\<br\>"
+        document.getElementById("result").innerHTML="If you deposit $"+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of $"+interest.toFixed(2)+",\<br\>in the year "+year+"\<br\>"
     }
 }
 function updateRate()       //slider display
