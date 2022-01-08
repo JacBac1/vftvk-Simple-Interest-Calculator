@@ -9,13 +9,16 @@ function compute()      //button
     var amount = parseFloat(principal) + parseFloat(interest);
     var year = new Date().getFullYear()+parseInt(years);
     //display, verification
-    if(principal < 0)
+    if(principal <= 0)
     {
-        document.getElementById("result").innerHTML="The amount you entered is invalid.\<br\>"
+        document.getElementById("result").innerHTML="The amount you entered is invalid. Please enter a positive number.\<br\>"
+        document.getElementById("principal").focus();
     }
     else
     {
         document.getElementById("result").innerHTML="If you deposit $"+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of $"+interest.toFixed(2)+",\<br\>in the year "+year+"\<br\>"
+        document.getElementById("principal").focus();
+
     }
 }
 function updateRate()       //slider display
